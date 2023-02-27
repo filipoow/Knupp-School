@@ -13,3 +13,46 @@
     font-weight: 400;
 }
 
+.junior-title-full {
+    width: 100%;
+}
+
+.junior-measure {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.junior-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.block-title {
+    width: .3rem;
+    height: 3rem;
+    background: #2975A5;
+}
+
+.junior-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.junior-title h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #2A719D;
+}
+
+.junior-text h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #2A719D;
+}
