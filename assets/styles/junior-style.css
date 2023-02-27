@@ -1,0 +1,15 @@
+.junior-photo {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: linear-gradient(90.53deg, #C4C96C 1.47%, #548F4A 119.84%);
+}
+
+.junior-photo h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
