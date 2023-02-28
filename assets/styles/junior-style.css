@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 
 .junior-title {
@@ -71,7 +71,7 @@
 
 .describe-photo {
     width: 55%;
-    height: 35rem;
+    height: 30.4rem;
     background: linear-gradient(90.53deg, #C4C96C 1.47%, #548F4A 119.84%);
     position: absolute;
     display: flex;
@@ -89,7 +89,7 @@
 .describe-text {
     display: flex;
     gap: 2rem;
-    width: 20rem;
+    width: 25rem;
     text-align: justify;
     flex-wrap: wrap;
 }
@@ -106,8 +106,21 @@
     flex-wrap: wrap;
 }
 
+.point-title h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2572A2;
+}
+
 .option {
     width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+
+.option img {
+    width: 1rem;
+    height: 1rem;
 }
 
 .class-hours {
