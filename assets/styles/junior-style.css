@@ -56,3 +56,72 @@
     font-weight: 400;
     color: #2A719D;
 }
+
+.describe-block {
+    width: 100%;
+    padding: 4rem 0rem 0rem 0rem;
+}
+
+.describe-measure {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.describe-photo {
+    width: 55%;
+    height: 35rem;
+    background: linear-gradient(90.53deg, #C4C96C 1.47%, #548F4A 119.84%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 0rem 0rem 15rem 0rem;
+}
+
+.describe-photo h1 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.describe-text {
+    display: flex;
+    gap: 2rem;
+    width: 20rem;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+.describe-points {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.point {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.option {
+    width: 100%;
+}
+
+.class-hours {
+    width: 100%;
+    height: 6rem;
+    background: linear-gradient(90deg, #2572A2 0%, #4B91BD 100%);
+    border-radius: 1.5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class-hours h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
