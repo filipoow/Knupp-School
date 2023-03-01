@@ -71,7 +71,7 @@
 
 .describe-photo {
     width: 45%;
-    height: 30.4rem;
+    height: 28rem;
     background: linear-gradient(90.53deg, #C4C96C 1.47%, #548F4A 119.84%);
     position: absolute;
     display: flex;
@@ -152,7 +152,7 @@
 .calendar-text-box {
     display: flex;
     gap: 2rem;
-    width: 23rem;
+    width: 25rem;
     text-align: justify;
     flex-wrap: wrap;
 }
@@ -178,7 +178,8 @@
     background: linear-gradient(90deg, #2572A2 0%, #4B91BD 100%);
     border-radius: 1.5rem;
     width: 35rem;
-    padding: 4.5rem;
+    height: 100%;
+    padding: 0rem 4rem 0rem 4rem;
 }
 
 .calendar-button-all {
@@ -188,4 +189,71 @@
 .calendar-button h3 {
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+.our-differencial-all {
+    width: 80%;
+    margin: auto;
+    padding-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.our-differencial-all h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #2A719D;
+}
+
+.our-differencial-title {
+    width: 100%;
+}
+
+.our-differencial-text {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.row p {
+    display: flex;
+    gap: 2rem;
+    width: 25rem;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+.subject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45rem;
+    height: 3.4rem;
+    border-radius: .8rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, #2572A2 0%, #4B91BD 100%);
+    cursor: pointer;
+}
+
+.subject h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.subject:hover {
+    background: linear-gradient(90.53deg, #498FBB 1.47%, #548F4A 119.84%);
+}
+
+.calendar-button:hover {
+    background: linear-gradient(90.53deg, #498FBB 1.47%, #548F4A 119.84%);
+}
+
+.class-hours:hover {
+    background: linear-gradient(90.53deg, #498FBB 1.47%, #548F4A 119.84%);
 }
