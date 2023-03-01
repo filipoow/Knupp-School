@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    background: linear-gradient(90.53deg, #C4C96C 1.47%, #548F4A 119.84%);
+    background: linear-gradient(90.11deg, #4B8FA0 0.08%, #518F62 98.96%);
 }
 
 .junior-photo h1 {
@@ -194,7 +194,7 @@
 .our-differencial-all {
     width: 80%;
     margin: auto;
-    padding-top: 6rem;
+    padding: 6rem 0rem 4rem 0rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
