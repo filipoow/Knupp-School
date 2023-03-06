@@ -106,13 +106,9 @@ $("#matricula-button").click(function() {
       'slow');
 });
 
-function abrirPopup(){
-  abrirWindow = window.open (
-    'popup.html',
-    'pagina',
-    "width=350, height=255, top=100, left=110, scrollbars=no " );
-  }
-
-function fecharPopup(){
-  fecharWindow = abrirWindow.close()
-  }
+function openPopup() {
+  popup.classList.add('open-popup');
+}
+function closePopup() {
+  popup.classList.remove('open-popup');
+}

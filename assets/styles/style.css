@@ -952,3 +952,30 @@ footer {
 .segmtn {
     width: 100%;
 }
+
+.popup {
+    width: 70rem;
+    background: #fff;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    cursor: pointer;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #216894;
+}
