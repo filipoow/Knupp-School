@@ -1048,6 +1048,7 @@ footer {
 
 .ourhistory .measure h1 {
     font-weight: 500;
+    width: 100%;
 }
 
 .team {
@@ -1055,12 +1056,24 @@ footer {
     padding-top: 5rem;
 }
 
-.team .measure {
+.team .measure h1 {
+    font-weight: 500;
+}
+
+.team-card {
+    padding: 1rem 0rem 0rem 0rem;
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
 }
 
-.team .measure h1 {
-    font-weight: 500;
+.card {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(90.11deg, #4B8FA0 0.08%, #518F62 98.96%);
+    display: flex;
+    overflow: hidden;
+}
+
+.form-text h3 {
+    width: 100%;
 }
