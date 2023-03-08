@@ -1033,3 +1033,34 @@ footer {
     font-weight: 400;
     color: #ffffff;
 }
+
+.ourhistory {
+    height: 15rem;
+    padding-top: 5rem;
+    background-color: #F6F6F6;
+}
+
+.ourhistory .measure {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ourhistory .measure h1 {
+    font-weight: 500;
+}
+
+.team {
+    height: 30rem;
+    padding-top: 5rem;
+}
+
+.team .measure {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.team .measure h1 {
+    font-weight: 500;
+}
