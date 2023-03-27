@@ -436,6 +436,12 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.text {
+    width: 30rem;
+    text-align: justify;
+}
+
 .photo1 {
     position: absolute;
     width: 40rem;
