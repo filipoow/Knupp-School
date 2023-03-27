@@ -226,7 +226,7 @@
 }
 
 .text-container {
-    width: 470px;
+    width: 30rem;
 }
 
 .text-container h1{
@@ -261,6 +261,10 @@
 .pedagogical-title h1{
     color: #216894;
     font-weight: 500;
+}
+
+.pedagogical-text {
+    width: 30rem;
 }
 
 .pedagogical-text p{
