@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <style>
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-gap: 10px;
+        }
+
+        .gallery img {
+          width: 100%;
+          height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery"></div>
+    <script>
+        const gallery = document.querySelector('.gallery');
+
+        const token = 'ee300267f93d9c19e2f705f6a1bc2bb8';
+        const userID = 'filippemartin';
+        const limit = 10;
+
+        fetch(`https://graph.instagram.com/${userID}/media?access_token=${token}&fields=id,caption,media_type,media_url,thumbnail_url&limit=${limit}`)
+          .then(response => response.json())
+          .then(data => {
+            data.data.forEach(photo => {
+              const img = document.createElement('img');
+              img.src = photo.media_url;
+              gallery.appendChild(img);
+            });
+          })
+          .catch(error => console.error(error));
+    </script>
+</body>
+</html>
