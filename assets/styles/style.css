@@ -537,119 +537,56 @@ a {
     font-size: 2rem;
 }
 
-.gallery {
-    width: 100%;
-    height: 40rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
+.instagram-title {
+    padding-top: 2.5rem;
 }
 
-.gallery-title {
-    margin: 1.5rem 0rem 2rem 0rem;
-}
-
-.gallery-title h1{
+.instagram-title h1{
     font-size: 2.5rem;
     font-weight: 500;
     color: #1f5f86;
 }
 
-.gallery-title h3{
+.instagram-title h3{
     font-size: 2rem;
     font-weight: 500;
     color: #216894;
 }
 
-
-.wrapper{
+.our-instagram {
+    width: 100%;
     display: flex;
-    max-width: 1152px;
-    position: relative;
-  }
-  .wrapper i{
-    top: 50%;
-    height: 44px;
-    width: 44px;
-    color: #343F4F;
-    cursor: pointer;
-    font-size: 1.15rem;
-    position: absolute;
-    text-align: center;
-    line-height: 44px;
-    background: #fff;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.1s linear;
-  }
-  .wrapper i:active{
-    transform: translateY(-50%) scale(0.9);
-  }
-  .wrapper i:hover{
-    background: #f2f2f2;
-  }
-  .wrapper i:first-child{
-    left: -22px;
-    display: none;
-  }
-  .wrapper i:last-child{
-    right: -22px;
-  }
-  .wrapper .carousel{
-    font-size: 0px;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-  }
-  .carousel.dragging{
-    cursor: grab;
-    scroll-behavior: auto;
-  }
-  .carousel.dragging img{
-    pointer-events: none;
-  }
-  .carousel img{
-    height: 340px;
-    object-fit: cover;
-    user-select: none;
-    margin-left: 14px;
-    width: calc(100% / 3);
-  }
-  .carousel img:first-child{
-    margin-left: 0px;
-  }
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
 
-  @media screen and (max-width: 900px) {
-    .carousel img{
-      width: calc(100% / 2);
-    }
-  }
-  @media screen and (max-width: 550px) {
-    .carousel img{
-      width: 100%;
-    }
-  }
+.posts {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
 
-.all-gallery-button {
-    width: 12rem;
+.instagram-redirect {
+    width: 18rem;
     height: 2.6rem;
     background: #C4C96C;
-    margin: 2rem 0rem 0rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 1rem;
     border-radius: .5rem;
+    margin-bottom: 2.5rem;
 }
 
-.all-gallery {
-    text-decoration: none;
+.instagram-redirect img {
+    width: 2rem;
 }
 
-.all-gallery-button h3{
+.instagram-redirect h3 {
     color: #ffffff;
     font-weight: 400;
     font-size: 1rem;
