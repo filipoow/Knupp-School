@@ -234,7 +234,7 @@
 
 .pedagogical-container {
     width: 100%;
-    height: 52rem;
+    height: 42rem;
     overflow: hidden;
 }
 
@@ -510,6 +510,78 @@
     width: 100%;
     height: 38rem;
 }
+
+.about-project-angel {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.photo1 {
+    position: absolute;
+    width: 40rem;
+    height: 38rem;
+    background: linear-gradient(90.53deg, #C4C96C 1.47%, #548F4A 119.84%);
+    border-radius: 0rem 18rem 0rem 0rem;
+    margin: -7rem 0rem 0rem 0rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.title {
+    float: left;
+}
+
+.title h1{
+    color: #216894;
+    font-weight: 500;
+}
+
+.title h3{
+    color: #C4C96C;
+    font-weight: 500;
+}
+
+.head {
+    width: 100%;
+    height: 10rem;
+    background-color: #f3f3f3;
+}
+
+.about-project-text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.photo2 {
+    position: absolute;
+    width: 40rem;
+    height: 38rem;
+    background: linear-gradient(270deg, #266D99 0%, #4188B3 86.74%);
+    border-radius: 0rem 0rem 18rem 0rem;
+    margin: -7rem 0rem 0rem 0rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+
+
 
 @media (min-width: 768px) {
     *{
