@@ -1490,6 +1490,7 @@ footer {
         height: 6rem;
         display: flex;
         margin: auto;
+        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -1546,6 +1547,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
         float: left;
     }
 
@@ -1562,6 +1564,7 @@ footer {
         border-radius: 10rem 0px ;
         display: flex;
         align-items: center;
+        position: relative;
         justify-content: center;
     }
 
