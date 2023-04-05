@@ -2106,6 +2106,7 @@ footer {
         width: 80%;
         margin: auto;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
