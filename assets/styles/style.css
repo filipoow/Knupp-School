@@ -573,15 +573,16 @@ a {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    gap: 3rem;
+    text-align: justify;
+    gap: 2rem;
 }
 
 .photo2 {
     width: 24rem;
     height: 18rem;
     background: linear-gradient(270deg, #266D99 0%, #4188B3 86.74%);
-    border-radius: 0rem 0rem 18rem 0rem;
-    margin: -7rem 0rem 0rem 0rem;
+    border-radius: 0rem 0rem 8rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
     overflow: hidden;
     display: flex;
     align-items: center;
