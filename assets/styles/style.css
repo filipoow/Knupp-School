@@ -8,6 +8,11 @@
     user-select: none; 
 }
 
+.all-site {
+    width: 100%;
+    overflow: hidden;
+}
+
 .measure {
     width: 80%;
     margin: auto;
@@ -1239,6 +1244,12 @@ footer {
 }
 
 @media (min-width: 768px) {
+    
+    .all-site {
+        width: 100%;
+        overflow: hidden;
+    }
+
     *{
         margin: 0;
         padding: 0;
