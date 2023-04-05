@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+a {
+    text-decoration: none;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -611,6 +615,62 @@
     color: #ffffff;
     font-weight: 500;
     font-size: 2rem;
+}
+
+.instagram-title {
+    padding-top: 2.5rem;
+}
+
+.instagram-title h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #1f5f86;
+}
+
+.instagram-title h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #216894;
+}
+
+.our-instagram {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.posts {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.instagram-redirect {
+    width: 18rem;
+    height: 2.6rem;
+    background: #C4C96C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 2.5rem;
+}
+
+.instagram-redirect img {
+    width: 2rem;
+}
+
+.instagram-redirect h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .gallery {
@@ -1652,7 +1712,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 11rem 0rem 0rem 40rem;
+        margin: 11rem 0rem 0rem 30rem;
     }
 
     .extra-activites:hover {
@@ -1755,6 +1815,10 @@ footer {
         color: #ffffff;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .visit {
         width: 100%;
         height: 8.5rem;
@@ -1782,6 +1846,63 @@ footer {
         font-weight: 500;
         font-size: 2rem;
     }
+
+    .instagram-title {
+    padding-top: 2.5rem;
+    }
+
+    .instagram-title h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: #1f5f86;
+    }
+
+    .instagram-title h3{
+        font-size: 2rem;
+        font-weight: 500;
+        color: #216894;
+    }
+
+    .our-instagram {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .posts {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .instagram-redirect {
+        width: 18rem;
+        height: 2.6rem;
+        background: #C4C96C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        border-radius: .5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .instagram-redirect img {
+        width: 2rem;
+    }
+
+    .instagram-redirect h3 {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
 
     .gallery {
         width: 100%;
