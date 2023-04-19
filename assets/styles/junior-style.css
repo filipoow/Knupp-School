@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    background: linear-gradient(90.11deg, #4B8FA0 0.08%, #518F62 98.96%);
+    overflow: hidden;
 }
 
 .junior-photo h1 {
