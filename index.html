@@ -7,26 +7,45 @@
     <link rel="stylesheet" href="assets\styles\style.css">
     <link rel="icon" type="image/png" href="assets\img\logo.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets\styles\menu.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/velocity/2.0.5/velocity.min.js"></script>
     <script src="assets\script.js" defer></script>
     <title>Colégio Knupp - Fazendo a diferença pela educação</title>
 </head>
 <body> 
 <div class="all-site">
-    <div class="measure">
+    <div class="menu">
+        <div class="menu-flower">
+            <div id="firstP"></div>
+            <div id="secondP"></div>
+            <div id="circleP"></div>
+        </div>
         <a href="index.html"><img class="logo" src="assets\img\tipograph.png" alt="Colégio Knupp"></a>
     </div>
-    <div class="menu" style="background: linear-gradient(90deg, #2673A3 -0.42%, #498FBB 100%);">
-         <div class="menu-cor" style="background: #2975A5;"></div>
-         <div class="measure">
-             <nav class="navMenu">
-                <a href="index.html">Início</a>
-                <a href="who.html">Quem somos?</a>
-                <a href="diferencial.html">Diferenciais</a>
-                <a href="index.html#pedg">Proposta Pedagógica</a>
-                <a href="construct.html">Nosso Blog</a>
-             </nav>
-         </div>
-     </div>
+    <div class="overlay-navigation">
+        <nav role="navigation">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="who.html">Quem somos?</a></li>
+            <li><a href="diferencial.html">Diferenciais</a></li>
+            <li><a href="#">Proposta Pedagógica</a></li>
+            <li><a href="#">Nosso Blog</a></li>
+          </ul>
+        </nav>
+    </div>
+    <section class="home">
+        <div class="open-overlay">
+            <div class="all-overlay">
+                <span class="bar-top"></span>
+                <span class="bar-middle"></span>
+                <span class="bar-bottom"></span>
+            </div>
+            <p>Menu</p>
+        </div>
+    </section>
+    <div class="menu-cor"></div>
+    <div class="menu-cor" style="background-color: #3897f0;"></div>
     <div class="junior-photo">
         <h1>Foto</h1>
      </div>
@@ -393,5 +412,42 @@
         </div>
     </footer>
 </div>
+<script>
+    $('.open-overlay').click(function() {
+        var overlay_navigation = $('.overlay-navigation'),
+          nav_item_1 = $('nav li:nth-of-type(1)'),
+          nav_item_2 = $('nav li:nth-of-type(2)'),
+          nav_item_3 = $('nav li:nth-of-type(3)'),
+          nav_item_4 = $('nav li:nth-of-type(4)'),
+          nav_item_5 = $('nav li:nth-of-type(5)'),
+          top_bar = $('.bar-top'),
+          middle_bar = $('.bar-middle'),
+          bottom_bar = $('.bar-bottom');
+
+        overlay_navigation.toggleClass('overlay-active');
+        if (overlay_navigation.hasClass('overlay-active')) {
+        
+          top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
+          middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
+          bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
+          overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down')
+          nav_item_1.removeClass('slide-in-nav-item-reverse').addClass('slide-in-nav-item');
+          nav_item_2.removeClass('slide-in-nav-item-delay-1-reverse').addClass('slide-in-nav-item-delay-1');
+          nav_item_3.removeClass('slide-in-nav-item-delay-2-reverse').addClass('slide-in-nav-item-delay-2');
+          nav_item_4.removeClass('slide-in-nav-item-delay-3-reverse').addClass('slide-in-nav-item-delay-3');
+          nav_item_5.removeClass('slide-in-nav-item-delay-4-reverse').addClass('slide-in-nav-item-delay-4');
+        } else {
+          top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
+          middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
+          bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
+          overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up')
+          nav_item_1.removeClass('slide-in-nav-item').addClass('slide-in-nav-item-reverse');
+          nav_item_2.removeClass('slide-in-nav-item-delay-1').addClass('slide-in-nav-item-delay-1-reverse');
+          nav_item_3.removeClass('slide-in-nav-item-delay-2').addClass('slide-in-nav-item-delay-2-reverse');
+          nav_item_4.removeClass('slide-in-nav-item-delay-3').addClass('slide-in-nav-item-delay-3-reverse');
+          nav_item_5.removeClass('slide-in-nav-item-delay-4').addClass('slide-in-nav-item-delay-4-reverse');
+        }
+    })
+</script>
 </body>
 </html>
