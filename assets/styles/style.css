@@ -208,7 +208,7 @@ a {
 .text-container {
     text-align: justify;
     text-justify: auto;
-    margin-top: rem;
+    margin-top: 6rem;
 }
 
 .text-container h1{
@@ -1073,6 +1073,7 @@ footer {
     padding-top: 1rem;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -2096,9 +2097,6 @@ footer {
     }
 
     .form-description {
-        width: 35%;
-        height: 30rem;
-        padding: 3rem;
         background: linear-gradient(90deg, #4086B2 -3.01%, #286F9B 98.78%);
         color: white;
         font-weight: 300;
