@@ -53,7 +53,8 @@ a {
 }
 
 .junior-photo img {
-    width: 40rem;
+    width: 48rem;
+    margin-right: 20rem;
 }
 
 .junior-photo h1 {
@@ -146,6 +147,7 @@ a {
     width: 40rem;
     margin: -22rem 0rem 0rem -9rem;
     position: absolute;
+    display: none;
 }
 
 .planet {
@@ -155,7 +157,7 @@ a {
 }
 
 .about-knupp {
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -166,6 +168,7 @@ a {
 }
 
 .tipograph{
+    width: 100%;
     margin-top: 2rem;
     height: 10rem;
     overflow: hidden;
@@ -186,29 +189,32 @@ a {
     -webkit-box-shadow: 0px 0px 67px -8px rgba(176,176,176,0.24);
     -moz-box-shadow: 0px 0px 67px -8px rgba(176,176,176,0.24);
     box-shadow: 0px 0px 67px -8px rgba(176,176,176,0.24);
+    display: none;
 }
 
 .circle img {
     width: 65px;
     height: 50px;
     margin: 1.2rem;
+    display: none;
 }
 
 .logo-title h1{
-    font-size: 1.2rem;
-    color: #ffffff;
+    font-size: 3rem;
+    color: #3279A4;
     font-weight: 500;
 }
 
 .logo-title p{
-    font-size: 0.9rem;
-    color: #ffffff;
+    font-size: 1.2rem;
+    color: #3683b3;
 }
 
 .text-container {
+    width: 80%;
     text-align: justify;
     text-justify: auto;
-    margin-top: 6rem;
+    margin-top: 0rem;
 }
 
 .text-container h1{
@@ -1331,8 +1337,8 @@ footer {
     }
 
     .junior-photo img {
-        margin-top: 10rem;
-        width: 100rem;
+        width: 90rem;
+        margin-left: 20rem;
     }
 
     .junior-photo h1 {
@@ -1428,6 +1434,7 @@ footer {
         height: 1000px;
         margin: -12rem 0rem 0rem -18rem;
         position: absolute;
+        display: block;
     }
 
     .planet {
@@ -1451,6 +1458,7 @@ footer {
     }
 
     .tipograph{
+        width: 20rem;
         height: 14rem;
         overflow: hidden;
         display: flex;
@@ -1470,12 +1478,14 @@ footer {
         -webkit-box-shadow: 0px 0px 67px -8px rgba(176,176,176,0.24);
         -moz-box-shadow: 0px 0px 67px -8px rgba(176,176,176,0.24);
         box-shadow: 0px 0px 67px -8px rgba(176,176,176,0.24);
+        display: block;
     }
 
     .circle img {
         width: 75px;
         height: 60px;
         margin: 1.5rem;
+        display: block;
     }
 
     .logo-title h1{
@@ -1494,6 +1504,7 @@ footer {
         height: 12rem;
         text-align: justify;
         text-justify: auto;
+        margin-bottom: 4rem;
     }
 
     .text-container h1{
