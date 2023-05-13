@@ -222,6 +222,11 @@ Burger king
   gap: 1rem;
 }
 
+
+.none {
+  display: none;
+}
+
 .all-overlay {
     position: absolute;
     right: 3rem;

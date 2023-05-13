@@ -26,7 +26,7 @@
     <div class="overlay-navigation">
         <nav role="navigation">
           <ul>
-            <li><a href="#">Início</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="who.html">Quem somos?</a></li>
             <li><a href="diferencial.html">Diferenciais</a></li>
             <li><a href="#">Proposta Pedagógica</a></li>
@@ -197,7 +197,7 @@
             </div>
         </div>
     </div>
-    <div class="angel-project-all" style="height: 45rem;">
+    <div class="angel-project-all">
         <div class="photo1">
             <h1>Foto 1</h1>
         </div>
@@ -422,11 +422,13 @@
           nav_item_5 = $('nav li:nth-of-type(5)'),
           top_bar = $('.bar-top'),
           middle_bar = $('.bar-middle'),
-          bottom_bar = $('.bar-bottom');
+          bottom_bar = $('.bar-bottom'),
+          open= $('.open-overlay');
 
         overlay_navigation.toggleClass('overlay-active');
         if (overlay_navigation.hasClass('overlay-active')) {
         
+          open.addClass('none');
           top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
           middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
           bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
