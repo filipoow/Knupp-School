@@ -290,11 +290,13 @@
               nav_item_5 = $('nav li:nth-of-type(5)'),
               top_bar = $('.bar-top'),
               middle_bar = $('.bar-middle'),
-              bottom_bar = $('.bar-bottom');
+              bottom_bar = $('.bar-bottom'),
+              open= $('.open-overlay');
     
             overlay_navigation.toggleClass('overlay-active');
             if (overlay_navigation.hasClass('overlay-active')) {
             
+              open.addClass('none');
               top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
               middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
               bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
