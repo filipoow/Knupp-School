@@ -9,7 +9,7 @@
 }
 
 .junior-photo h1 {
-    font-size: 2rem;
+    font-size: .5rem;
     font-weight: 400;
 }
 
@@ -46,13 +46,13 @@
 }
 
 .junior-title h1 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: #2A719D;
 }
 
 .junior-text h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #2A719D;
 }
@@ -66,14 +66,14 @@
     width: 80%;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
 }
 
 .describe-photo {
-    width: 45%;
-    height: 28rem;
+    width: 90%;
+    height: 24rem;
     background: linear-gradient(90.53deg, #C4C96C 1.47%, #548F4A 119.84%);
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,9 +87,10 @@
 }
 
 .describe-text {
+    margin-top: 2rem;
     display: flex;
     gap: 2rem;
-    width: 35rem;
+    width: 100%;
     text-align: justify;
     flex-wrap: wrap;
 }
@@ -144,6 +145,7 @@
     width: 80%;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
     padding-top: 6rem;
@@ -152,7 +154,7 @@
 .calendar-text-box {
     display: flex;
     gap: 2rem;
-    width: 25rem;
+    width: 100%;
     text-align: justify;
     flex-wrap: wrap;
 }
@@ -179,11 +181,20 @@
     border-radius: 1.5rem;
     width: 35rem;
     height: 100%;
-    padding: 0rem 4rem 0rem 4rem;
+    gap: 2rem;
 }
 
 .calendar-button-all {
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    background: linear-gradient(90deg, #2572A2 0%, #4B91BD 100%);
+    border-radius: .8rem;
+    width: 100%;
+    height: 6rem;
+    padding: 0rem 4rem 0rem 4rem;
 }
 
 .calendar-button h3 {
@@ -256,4 +267,279 @@
 
 .class-hours:hover {
     background: linear-gradient(90.53deg, #498FBB 1.47%, #548F4A 119.84%);
+}
+
+@media (min-width: 768px) {
+    .junior-photo {
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        overflow: hidden;
+    }
+    
+    .junior-photo h1 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .junior-title-full {
+        width: 100%;
+    }
+    
+    .junior-measure {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding-top: 4rem;
+    }
+    
+    .junior-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .block-title {
+        width: .3rem;
+        height: 3rem;
+        background: #2975A5;
+    }
+    
+    .junior-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .junior-title h1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #2A719D;
+    }
+    
+    .junior-text h3 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #2A719D;
+    }
+    
+    .describe-block {
+        width: 100%;
+        padding: 4rem 0rem 0rem 0rem;
+    }
+    
+    .describe-measure {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    
+    .describe-photo {
+        width: 45%;
+        height: 28rem;
+        background: linear-gradient(90.53deg, #C4C96C 1.47%, #548F4A 119.84%);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        border-radius: 0rem 0rem 15rem 0rem;
+    }
+    
+    .describe-photo h1 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .describe-text {
+        margin-top: 0rem;
+        display: flex;
+        gap: 2rem;
+        width: 35rem;
+        text-align: justify;
+        flex-wrap: wrap;
+    }
+    
+    .describe-points {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    
+    .point {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .point-title h1 {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #2572A2;
+    }
+    
+    .option {
+        width: 100%;
+        display: flex;
+        gap: .5rem;
+    }
+    
+    .option img {
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    .class-hours {
+        width: 100%;
+        height: 6rem;
+        background: linear-gradient(90deg, #2572A2 0%, #4B91BD 100%);
+        border-radius: 1rem;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    
+    .class-hours h3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    .anual-calendar-total {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-top: 6rem;
+    }
+    
+    .calendar-text-box {
+        display: flex;
+        gap: 2rem;
+        width: 25rem;
+        text-align: justify;
+        flex-wrap: wrap;
+    }
+    
+    .calendar-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .calendar-title h1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #2A719D;
+    }
+    
+    .calendar-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+        background: linear-gradient(90deg, #2572A2 0%, #4B91BD 100%);
+        border-radius: 1.5rem;
+        width: 35rem;
+        height: 8rem;
+        padding: 0rem 4rem 0rem 4rem;
+    }
+    
+    .calendar-button-all {
+        text-decoration: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+        background: linear-gradient(90deg, #2572A2 0%, #4B91BD 100%);
+        border-radius: .8rem;
+        width: 35rem;
+        height: 8rem;
+        padding: 0rem 4rem 0rem 4rem;
+    }
+    
+    .calendar-button h3 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    
+    .our-differencial-all {
+        width: 80%;
+        margin: auto;
+        padding: 6rem 0rem 4rem 0rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .our-differencial-all h1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #2A719D;
+    }
+    
+    .our-differencial-title {
+        width: 100%;
+    }
+    
+    .our-differencial-text {
+        width: 100%;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .row p {
+        display: flex;
+        gap: 2rem;
+        width: 25rem;
+        text-align: justify;
+        flex-wrap: wrap;
+    }
+    
+    .subject {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45rem;
+        height: 3.4rem;
+        border-radius: .8rem;
+        color: #ffffff;
+        background: linear-gradient(90deg, #2572A2 0%, #4B91BD 100%);
+        cursor: pointer;
+    }
+    
+    .subject h3 {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    .subject:hover {
+        background: linear-gradient(90.53deg, #498FBB 1.47%, #548F4A 119.84%);
+    }
+    
+    .all-calendar-button:hover {
+        background: linear-gradient(90.53deg, #498FBB 1.47%, #548F4A 119.84%);
+    }
+    
+    .class-hours:hover {
+        background: linear-gradient(90.53deg, #498FBB 1.47%, #548F4A 119.84%);
+    }
 }
