@@ -30,9 +30,10 @@ a {
 }
 
 .logo{
-    width: 18rem;
+    width: 14rem;
     padding-top: 1.2rem;
-    margin: auto;
+    margin-left: -10rem;
+    display: none;
 }
 
 .menu-cor {
@@ -165,7 +166,8 @@ a {
 }
 
 .tipograph{
-    height: 14rem;
+    margin-top: 2rem;
+    height: 10rem;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -175,8 +177,8 @@ a {
 }
 
 .circle {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     /* margin: 1.5rem 0rem 0rem -25rem; */
     background-color: #ffffff;
     border-radius: 50%;
@@ -187,13 +189,13 @@ a {
 }
 
 .circle img {
-    width: 75px;
-    height: 60px;
-    margin: 1.5rem;
+    width: 65px;
+    height: 50px;
+    margin: 1.2rem;
 }
 
 .logo-title h1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #ffffff;
     font-weight: 500;
 }
@@ -206,6 +208,7 @@ a {
 .text-container {
     text-align: justify;
     text-justify: auto;
+    margin-top: rem;
 }
 
 .text-container h1{
@@ -1308,6 +1311,7 @@ footer {
         width: 20rem;
         margin-top: 1rem;
         margin-right: 15rem;
+        display: block;
     }
 
     .menu-cor {

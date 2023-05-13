@@ -413,6 +413,46 @@ Animation keyframes
 }
 
 @media (max-width: 640px) {
+  .menu {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+  #firstP {
+    width: 10rem;
+    height: 6rem;
+    background: #2e97d8;
+    border-radius: 4rem 0rem 0rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    float: left;
+}
+
+#secondP {
+    width: 10rem;
+    height: 6rem;
+    background: #1884c7;
+    border-radius: 0px 4rem 0rem 4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+#circleP {
+    width: 6rem;
+    height: 6rem;
+    background: #ffc928;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
 nav ul {
     display: flex;
     flex-direction: column;
@@ -425,7 +465,7 @@ nav ul {
     font-size: 0.6rem;
   }
   .open-overlay {
-    right: 1rem;
+    margin: -1rem 0rem 0rem -10rem;
   }
   nav li a:before {
     width: 15px;
