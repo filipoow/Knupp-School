@@ -1121,8 +1121,10 @@ footer {
     gap: 1rem;
     display: none;
 }
-.socials img {
-    width: 2rem;
+.socials a {
+    text-decoration: none;
+    text-decoration-style: none;
+    font-weight: 400;
 }
 
 .segmtn {
