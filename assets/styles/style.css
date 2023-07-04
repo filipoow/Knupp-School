@@ -32,8 +32,9 @@ a {
 .logo{
     width: 14rem;
     padding-top: 1.2rem;
-    margin-left: -10rem;
-    display: none;
+    margin-left: -14rem;
+    display: block;
+    position: absolute;
 }
 
 .menu-cor {
@@ -1323,6 +1324,7 @@ footer {
         margin-top: 1rem;
         margin-right: 15rem;
         display: block;
+        position: relative;
     }
 
     .menu-cor {
