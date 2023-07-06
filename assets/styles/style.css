@@ -30,9 +30,9 @@ a {
 }
 
 .logo{
-    width: 14rem;
-    padding-top: 1.2rem;
-    margin-left: -14rem;
+    width: 10rem;
+    padding-top: 1.5rem;
+    margin-left: 2rem;
     display: block;
     position: absolute;
 }
@@ -1330,9 +1330,9 @@ footer {
     }
 
     .logo{
-        width: 20rem;
-        margin-top: 1rem;
-        margin-right: 15rem;
+        width: 15rem;
+        padding-top: 1.5rem;
+        margin-left: 55%;
         display: block;
         position: relative;
     }
@@ -1683,18 +1683,18 @@ footer {
         position: absolute;
         width: 24rem;
         height: 6rem;
-        background: #C4C96C;
+        background: #b7bb64;
         border-radius: 0rem 13rem 13rem 18rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 11rem 0rem 0rem 30rem;
+        margin: 11rem 0rem 0rem 42rem;
     }
 
     .extra-activites:hover {
         width: 25rem;
         height: 6rem;
-        background: #b7bb64;
+        background: #abaf5c;
     }
 
     .extra-activites h1 {
