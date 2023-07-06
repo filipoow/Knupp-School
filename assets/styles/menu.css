@@ -437,7 +437,7 @@ Animation keyframes
     height: 6rem;
     background: #1884c7;
     border-radius: 0px 4rem 0rem 4rem;
-    display: flex;
+    display: none;
     align-items: center;
     position: relative;
     justify-content: center;
@@ -448,7 +448,7 @@ Animation keyframes
     height: 6rem;
     background: #ffc928;
     border-radius: 50%;
-    display: flex;
+    display: none;
     align-items: center;
     position: relative;
     justify-content: center;
