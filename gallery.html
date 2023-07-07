@@ -5,41 +5,231 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets\styles\menu.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/velocity/2.0.5/velocity.min.js"></script>
-    <title>Colégio Knupp - Fazendo a diferença pela educação</title>
+    <link rel="stylesheet" href="assets\styles\style.css">
+    <link rel="icon" type="image/png" href="assets\img\logo.png"/>
     <style>
-        .gallery {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-          grid-gap: 10px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
-        .gallery img {
-          width: 100%;
-          height: auto;
+        
+        body {
+            font-family: 'Montserrat';
+        }
+        
+        #instafeed-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .insta-item {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        
+        .insta-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .insta-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/velocity/2.0.5/velocity.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <title>Colégio Knupp - Fazendo a diferença pela educação</title>
 </head>
 <body>
-    <div class="gallery"></div>
-    <script>
-        const gallery = document.querySelector('.gallery');
+<div class="all-site">
+    <div class="menu">
+        <a href="index.html"><img class="logo" src="assets\img\tipograph.png" alt="Colégio Knupp"></a>
+        <div class="menu-flower">
+            <div id="firstP"></div>
+            <div id="secondP"></div>
+            <div id="circleP"></div>
+        </div>
+    </div>
+    <div class="overlay-navigation">
+        <nav role="navigation">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="who.html">Quem somos?</a></li>
+            <li><a href="diferencial.html">Diferenciais</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="https://linktr.ee/colegioknupp">Nossas redes sociais</a></li>
+          </ul>
+        </nav>
+    </div>
+    <section class="home">
+        <div class="open-overlay">
+            <div class="all-overlay">
+                <span class="bar-top"></span>
+                <span class="bar-middle"></span>
+                <span class="bar-bottom"></span>
+            </div>
+            <p>Menu</p>
+        </div>
+    </section>
+    <div class="menu-cor"></div>
+    <div class="menu-cor" style="background-color: #3897f0;"></div>
+    <div class="ourhistory">
+      <div class="measure">
+          <h1>Nossa galeria de fotos</h1>
+          <p>
+              Pensamos no futuro dos nossos alunos, nos métodos, nas melhores práticas de ensino, tudo isso 
+              dentro de um ambiente acolhedor, que apoia as ideias dos alunos e os incentiva a pensar!
+          </p>
+      </div>
+  </div>
+    <div id="instafeed-container"></div>
+    <div class="form-all" id="form">
+      <div class="form-container">
+          <div class="form-description">
+              <div class="form-text">
+                  <h3>
+                      Entre em contato
+                  </h3>
+                  <h1>com o Knupp</h1>
+                  <p>
+                      Gostaria de matricular seu filho ou nos
+                      conhecer melhor?
+                  </p>
+                  <p>
+                      Envie sua mensagem através do nosso formulário que entraremos em contato com você.
+                  </p>
+                  <p>
+                      Se preferir, também temos outros canais de
+                      comunicação:
+                  </p>
+                  <p>
+                      Telefones: (11) 3831-1716 / (11) 3831-1767
+                  </p>
+                  <p>
+                      WhatsApp Comercial: (11) 97892-2357
+                  </p>
+                  <p>
+                      Email: colegioknupp@hotmail.com
+                  </p>
+              </div>
+          </div>
+          <form action="https://formsubmit.co/colegioknupp@hotmail.com" method="POST">  
+              <input type="hidden" name="_subject" value="Novo contato!">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, logo entraremos em contato com você!">
+              <input class="text-input" type="text" name="Nome" placeholder="Nome completo" required>
+              <input class="text-input" type="email" name="Email" placeholder="Email" required>
+              <input class="text-input" type="tel" name="Telefone" placeholder="Telefone" required>
+              <h3 class="segmtn">Segmento de interesse</h3>
+              <select class="text-input" name="Segmento de interesse" id="">
+                  <option value="Educação Infantil">Educação Infantil</option>
+                  <option value="Ensino Fundamental">Ensino Fundamental</option>
+              </select>
+              <!-- <div class="check-title">
+                  <h3>Qual a preferência de atendimento?</h3>
+              </div>
+              <div class="check-form">
+                  <label class="form-control" for="">
+                      <input type="checkbox" name="checkbox" id="">
+                      Telefone
+                  </label>
+                  <label class="form-control" for="">
+                      <input type="checkbox" name="checkbox-checked" id="">
+                      Whatsapp
+                  </label>
+                  <label class="form-control" for="">
+                      <input type="checkbox" name="checkbox" id="">
+                      Email
+                  </label>
+              </div> -->
+              <div class="text-form">
+                  <!-- <div class="divide-text">
+                      <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
+                  </div> -->
+                  <button class="button" type="submit">Enviar</button>
+              </div> 
+          </form>
+      </div>
+      <div class="form-back"></div>
+  </div>
+  <footer>
+      <div class="divisor-line"></div>
+      <div class="footer-container">
+          <div class="filka">
+              <h3>© Copyright 2022 - Colégio Knupp</h3>
+              <h3 class="filka-by" style="float:left">Feito por</h3>
+              <a href="https://www.behance.net/filkastudio" target="_blank">FILKA STUDIO</a>
+          </div>
+          <div class="klogo">
+             <a href="index.html"><img src="assets\img\tipograph.png" alt="Colégio Knupp"></a>
+          </div>
+          <div class="socials">
+              <a href="https://www.facebook.com/colegknupp1/" target="_blank"><img src="assets\img\facebook.svg" alt="facebook"></a>
+              <a href="https://www.instagram.com/colegioknupp/?hl=en" target="_blank"><img src="assets\img\instagram.svg" alt="instagram"></a>
+              <a href="https://api.whatsapp.com/send/?phone=5511978922357&text&type=phone_number&app_absent=0" target="_blank"><img src="assets\img\whatsapp.png" alt="whatsapp"></a>
+          </div>
+      </div>
+  </footer>
+</div>
+</div>
+<script>
+  $('.open-overlay').click(function() {
+      var overlay_navigation = $('.overlay-navigation'),
+        nav_item_1 = $('nav li:nth-of-type(1)'),
+        nav_item_2 = $('nav li:nth-of-type(2)'),
+        nav_item_3 = $('nav li:nth-of-type(3)'),
+        nav_item_4 = $('nav li:nth-of-type(4)'),
+        nav_item_5 = $('nav li:nth-of-type(5)'),
+        top_bar = $('.bar-top'),
+        middle_bar = $('.bar-middle'),
+        bottom_bar = $('.bar-bottom'),
+        open= $('.open-overlay');
 
-        const token = 'ee300267f93d9c19e2f705f6a1bc2bb8';
-        const userID = 'filippemartin';
-        const limit = 10;
+      overlay_navigation.toggleClass('overlay-active');
+      if (overlay_navigation.hasClass('overlay-active')) {
+      
+        open.addClass('none');
+        top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar');
+        middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar');
+        bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar');
+        overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down')
+        nav_item_1.removeClass('slide-in-nav-item-reverse').addClass('slide-in-nav-item');
+        nav_item_2.removeClass('slide-in-nav-item-delay-1-reverse').addClass('slide-in-nav-item-delay-1');
+        nav_item_3.removeClass('slide-in-nav-item-delay-2-reverse').addClass('slide-in-nav-item-delay-2');
+        nav_item_4.removeClass('slide-in-nav-item-delay-3-reverse').addClass('slide-in-nav-item-delay-3');
+        nav_item_5.removeClass('slide-in-nav-item-delay-4-reverse').addClass('slide-in-nav-item-delay-4');
+      } else {
+        top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar');
+        middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar');
+        bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar');
+        overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up')
+        nav_item_1.removeClass('slide-in-nav-item').addClass('slide-in-nav-item-reverse');
+        nav_item_2.removeClass('slide-in-nav-item-delay-1').addClass('slide-in-nav-item-delay-1-reverse');
+        nav_item_3.removeClass('slide-in-nav-item-delay-2').addClass('slide-in-nav-item-delay-2-reverse');
+        nav_item_4.removeClass('slide-in-nav-item-delay-3').addClass('slide-in-nav-item-delay-3-reverse');
+        nav_item_5.removeClass('slide-in-nav-item-delay-4').addClass('slide-in-nav-item-delay-4-reverse');
+      }
+  })
+</script>
 
-        fetch(`https://graph.instagram.com/${userID}/media?access_token=${token}&fields=id,caption,media_type,media_url,thumbnail_url&limit=${limit}`)
-          .then(response => response.json())
-          .then(data => {
-            data.data.forEach(photo => {
-              const img = document.createElement('img');
-              img.src = photo.media_url;
-              gallery.appendChild(img);
-            });
-          })
-          .catch(error => console.error(error));
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            accessToken: 'IGQVJYRFpleW5EemtPeWM2VHQ5OEJlRGhKZAGNKaUhLLThNZAnZABRDlraHd2TWtxZAzB4N2FDdjZAFUEVmalc5eVU1U2tIWjNrNW5TdllPNmI5SkVNOVlicTVNUTlXQlhtM0hhTUFEVWp1d25fMW1hZAnpuSwZDZD',
+            target: 'instafeed-container',
+            template: '<div class="insta-item"><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></div>',
+        });
+        userFeed.run();
     </script>
 </body>
 </html>
