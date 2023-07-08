@@ -79,6 +79,12 @@
     justify-content: center;
     color: #ffffff;
     border-radius: 0rem 0rem 15rem 0rem;
+    overflow: hidden;
+}
+
+.describe-photo img {
+    width: 30rem;
+    margin: 10rem 0rem 0rem 6rem;
 }
 
 .describe-photo h1 {
@@ -354,6 +360,12 @@
         justify-content: center;
         color: #ffffff;
         border-radius: 0rem 0rem 15rem 0rem;
+        overflow: hidden;
+    }
+
+    .describe-photo img {
+        width: 80rem;
+        margin: 50rem 0rem 0rem 0rem;
     }
     
     .describe-photo h1 {

@@ -532,6 +532,11 @@ a {
     color: #ffffff;
 }
 
+.photo1 img {
+    width: 200rem;
+    margin: 0rem 20rem 0rem 0rem ;
+}
+
 .title {
     float: left;
 }
@@ -579,6 +584,11 @@ a {
     align-items: center;
     justify-content: center;
     color: #ffffff;
+}
+
+.photo2 img {
+    width: 25rem;
+    margin: 10rem 0rem 0rem 0rem;
 }
 
 .visit {
@@ -1259,9 +1269,17 @@ footer {
 .card {
     width: 15rem;
     height: 15rem;
-    background: linear-gradient(90.11deg, #4B8FA0 0.08%, #518F62 98.96%);
+    background: #eeeeee;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
     overflow: hidden;
+}
+
+.card img {
+    width: 12rem;
+    height: 12rem;
 }
 
 .form-text h3 {
@@ -1740,6 +1758,11 @@ footer {
         color: #ffffff;
     }
 
+    .photo1 img {
+        width: 200rem;
+        margin: 0rem 20rem 20rem 0rem ;
+    }
+
     .title {
         float: left;
     }
@@ -1789,6 +1812,11 @@ footer {
         align-items: center;
         justify-content: center;
         color: #ffffff;
+    }
+
+    .photo2 img {
+        width: 40rem;
+        margin: 10rem 0rem 0rem 0rem;
     }
 
     a {
@@ -2471,9 +2499,17 @@ footer {
     .card {
         width: 15rem;
         height: 15rem;
-        background: linear-gradient(90.11deg, #4B8FA0 0.08%, #518F62 98.96%);
+        background: #eeeeee;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: .5rem;
         overflow: hidden;
+    }
+
+    .card img {
+        width: 12rem;
+        height: 12rem;
     }
 
     .form-text h3 {
