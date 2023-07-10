@@ -43,19 +43,9 @@ a {
     background-color: #2572A2;
 }
 
-.junior-photo {
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    overflow: hidden;
-}
-
 .junior-photo img {
-    width: 48rem;
-    margin-right: 20rem;
+    width: 100rem;
+    margin-left: -52rem;
 }
 
 .banner-photo img{
@@ -1359,6 +1349,17 @@ footer {
         width: 100%;
         height: 1rem;
         background-color: #2572A2;
+    }
+
+    .junior-photo {
+        background-image: url("assets/img/Banner.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .junior-photo img {
+        width: 100%;
+        margin-left: 0;
     }
 
     .banner-photo{
