@@ -60,7 +60,7 @@ a {
 
 .banner-photo img{
     width: 100rem;
-    margin-left: -52rem;
+    margin-left: -37rem;
 }
 
 .junior-photo h1 {
@@ -2517,7 +2517,7 @@ footer {
     }
 
     .prop-img {
-        margin-top: -.2rem;
+        margin-top: -.4rem;
         width: 100%;
         display: flex;
     }
