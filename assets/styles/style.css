@@ -325,6 +325,7 @@ a {
     justify-content: center;
     float: left;
     position: absolute;
+    cursor: pointer;
 }
 
 .all-flower a #third:hover {
@@ -343,6 +344,7 @@ a {
     justify-content: center;
     margin: -2rem 0rem 0rem 9rem;
     position: absolute;
+    cursor: pointer;
 }
 
 .all-flower a #fourth:hover {
@@ -383,6 +385,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .extra-activites:hover {
@@ -408,7 +411,7 @@ a {
 }
 
 .popup {
-    width: 22rem;
+    width: 95%;
     background: #fff;
     position: absolute;
     top: 0;
@@ -424,11 +427,12 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    box-shadow: 5px 5px #d6d6d6;
 }
 
 .open-popup {
     visibility: visible;
-    top: 50%;
+    top: 90rem;
     transform: translate(-50%,-50%) scale(1);
 }
 
@@ -451,7 +455,7 @@ a {
 }
 
 .popup-all img {
-    width: 5rem;
+    width: 1rem;
 }
 
 .popup-text {
@@ -1142,7 +1146,7 @@ footer {
 }
 
 .popup {
-    width: 33rem;
+    width: 95%;
     background: #fff;
     position: absolute;
     top: 0;
@@ -1162,7 +1166,7 @@ footer {
 
 .open-popup {
     visibility: visible;
-    top: 50%;
+    top: 100rem;
     transform: translate(-50%,-50%) scale(1);
 }
 
@@ -2402,11 +2406,12 @@ footer {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        box-shadow: 5px 5px #d6d6d6;
     }
 
     .open-popup {
         visibility: visible;
-        top: 50%;
+        top: 125rem;
         transform: translate(-50%,-50%) scale(1);
     }
 

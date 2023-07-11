@@ -112,3 +112,17 @@ function openPopup() {
 function closePopup() {
   popup.classList.remove('open-popup');
 }
+
+function openFinanceira() {
+  popup_financeira.classList.add('open-financeira');
+}
+function closeFinanceira() {
+  popup_financeira.classList.remove('open-financeira');
+}
+
+function openBilingue() {
+  popup_bilingue.classList.add('open-bilingue');
+}
+function closeBilingue() {
+  popup_bilingue.classList.remove('open-bilingue');
+}

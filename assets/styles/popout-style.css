@@ -1,0 +1,154 @@
+.popup-financeira {
+    width: 95%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 2rem;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 1rem 1rem;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: justify;
+    box-shadow: 5px 5px #d6d6d6;
+}
+
+.open-financeira {
+    visibility: visible;
+    top: 90rem;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup-financeira h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #216894;
+}
+
+.popup-financeira-all { 
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popup-financeira-all a {
+    margin: auto;
+}
+
+
+.popup-bilingue {
+    width: 95%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 2rem;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 1rem 1rem;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: justify;
+    box-shadow: 5px 5px #d6d6d6;
+}
+
+.open-bilingue {
+    visibility: visible;
+    top: 90rem;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup-bilingue h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #216894;
+}
+
+@media (min-width: 768px) {
+    .popup-financeira {
+        width: 38%;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        border-radius: 2rem;
+        transform: translate(-50%,-50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+
+    .open-financeira {
+        visibility: visible;
+        top: 125rem;
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+    .popup-financeira h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #216894;
+    }
+
+    .popup-financeira-all { 
+        display: flex;
+        gap: 4rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .popup-financeira-all a {
+        margin: auto;
+    }
+
+    .popup-bilingue {
+        width: 38%;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        border-radius: 2rem;
+        transform: translate(-50%,-50%) scale(0.1);
+        text-align: center;
+        padding: 0 30px 30px;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+
+    .open-bilingue {
+        visibility: visible;
+        top: 125rem;
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+    .popup-bilingue h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #216894;
+    }
+}

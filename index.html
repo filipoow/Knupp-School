@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets\styles\style.css">
     <link rel="icon" type="image/png" href="assets\img\logo.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/popout-style.css">
     <link rel="stylesheet" href="assets\styles\menu.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/velocity/2.0.5/velocity.min.js"></script>
@@ -131,7 +132,7 @@
                 </a>
             </div>
             <div class="pedagogical-flower2">
-                <a href="construct.html">
+                <a onclick="openFinanceira()">
                     <div id="third">
                         <div class="flower-text">
                             <h3>Educação</h3>
@@ -139,7 +140,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="construct.html">
+                <a onclick="openBilingue()">
                     <div id="fourth">
                         <div class="flower-text">
                             <h3>Ensino</h3>
@@ -156,46 +157,81 @@
                     <h1>Atividades Extras</h1>
                 </div>
             </a>
-            <div class="popup" id="popup">
-                <div class="popup-measure">
-                    <div class="popup-all">
-                    <div class="img-popup">
-                        <div class="cicle-boxin">
-                            <h3>Música</h3>
-                            <img src="assets\img\music-note.png" alt="">
-                        </div>
-                    </div>
-                    <div class="img-popup">
-                        <div class="cicle-boxin">
-                            <h3>Capoeira</h3>
-                            <img src="assets\img\capoeira.png" alt="">
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-measure">
                 <div class="popup-all">
-                    <div class="img-popup">
-                        <div class="cicle-boxin">
-                            <h3>Ballet</h3>
-                            <img src="assets\img\ballet.png" alt="">
-                        </div>
-                    </div>
-                    <div class="img-popup">
-                        <div class="cicle-boxin">
-                            <h3>Ballet</h3>
-                            <img src="assets\img\ballet.png" alt="">
-                        </div>
+                <div class="img-popup">
+                    <div class="cicle-boxin">
+                        <h3>Música</h3>
+                        <img src="assets\img\music-note.png" alt="">
                     </div>
                 </div>
-                <div class="popup-text">
-                    <h3>Com as atividades extras levamos mais cultura para o seu filho!!</h3>
-                    <a onclick="closePopup()" class="class-hours">
-                        <div>
-                            <h3>Fechar</h3>
-                        </div>
-                    </a>
-                </div>
+                <div class="img-popup">
+                    <div class="cicle-boxin">
+                        <h3>Capoeira</h3>
+                        <img src="assets\img\capoeira.png" alt="">
+                    </div>
                 </div>
             </div>
+            <div class="popup-all">
+                <div class="img-popup">
+                    <div class="cicle-boxin">
+                        <h3>Ballet</h3>
+                        <img src="assets\img\ballet.png" alt="">
+                    </div>
+                </div>
+                <div class="img-popup">
+                    <div class="cicle-boxin">
+                        <h3>Ballet</h3>
+                        <img src="assets\img\ballet.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popup-text">
+                <p>Com as atividades extras levamos mais cultura para o seu filho!!</p>
+                <a onclick="closePopup()" class="class-hours">
+                    <div>
+                        <h3>Fechar</h3>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="popup-financeira" id="popup_financeira">
+            <div class="popup-financeira-all">
+                <div class="popup-text">
+                    <h2>Sobre nossa educação financeira</h2><br>
+                    <p>
+                        Na Educação Infantil do Colégio Knupp, valorizamos o desenvolvimento integral das crianças, 
+                        proporcionando um ambiente acolhedor, seguro e estimulante. Nossos educadores estão comprometidos 
+                        em explorar o potencial único de cada criança, promovendo aprendizagem acadêmica, habilidades socioemocionais 
+                        e a descoberta do mundo ao redor. Aqui, cultivamos os alicerces do saber, preparando-os para uma jornada educacional plena e feliz.
+                    </p>
+                </div>
+            </div>
+            <a onclick="closeFinanceira()" class="class-hours">
+                <div>
+                    <h3>Fechar</h3>
+                </div>
+            </a>
+        </div>
+        <div class="popup-bilingue" id="popup_bilingue">
+            <div class="popup-financeira-all">
+                <div class="popup-text">
+                    <h2>Sobre nossa educação bilíngue</h2><br>
+                    <p>
+                        No colégio Knupp oferecemos um ensino bilíngue de excelência, com professores fluentes e atividades imersivas. 
+                        Preparamos nossos alunos para um futuro globalizado, desenvolvendo habilidades linguísticas, cognitivas e interculturais. 
+                        O ensino bilíngue é integrado ao currículo, abrindo portas para oportunidades ilimitadas. Venha fazer parte dessa experiência enriquecedora e se tornar um cidadão global.
+                    </p>
+                </div>
+            </div>
+            <a onclick="closeBilingue()" class="class-hours">
+                <div>
+                    <h3>Fechar</h3>
+                </div>
+            </a>
         </div>
     </div>
     <div class="angel-project-all">
